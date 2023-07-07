@@ -8,7 +8,7 @@ const client = require("@mailchimp/mailchimp_marketing");
 app.use(Bp.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname+'\\signup.html')
+    res.sendFile(__dirname+'src\\signup.html')
 })
 
 app.post('/', (req, res) => {
@@ -36,9 +36,9 @@ app.post('/', (req, res) => {
 
     run();
     if (res.statusCode===200) {
-        res.sendFile(__dirname+"\\success.html")
+        res.sendFile(__dirname+"src\\success.html")
     } else {
-        res.sendFile(__dirname+"\\failure.html")
+        res.sendFile(__dirname+"src\\failure.html")
     }
 })
 app.post('/failure', (req, res) => {
