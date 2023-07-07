@@ -17,7 +17,7 @@ app.post('/', (req, res) => {
     var mail = req.body.mailid;
     
     client.setConfig({
-        apiKey: '1d815879434743bfa4f70dc50c42ce8e-us11',
+        apiKey: '4fda2b76f5ee8907988723522d7306e5-us11',
         server: 'us11',
     });
 
