@@ -36,9 +36,9 @@ app.post('/', (req, res) => {
 
     run();
     if (res.statusCode===200) {
-        res.sendFile(__dirname+"/successhtml")
+        res.sendFile(__dirname+"/success.html")
     } else {
-        res.sendFile(__dirname+"Signup-website/failure.html")
+        res.sendFile(__dirname+"/failure.html")
     }
 })
 app.post('/failure', (req, res) => {
